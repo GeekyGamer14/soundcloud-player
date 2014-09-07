@@ -1,0 +1,91 @@
+.soundcloud-wrapper{
+	display: table;
+	margin: 0 auto;
+}
+
+.soundcloud{
+	height: 400px;
+	width: 400px;
+	background-size: 100px 100px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: hand;
+}
+
+.soundcloud.paused{
+	background-image: url(img/play.png);
+}
+
+.soundcloud.playing{
+	background-image: url(img/pause.png);
+}
+
+.soundcloud.loading{
+	background-image: url(img/loading.gif);
+}
+
+.soundcloud-art{
+	display: inline-block;
+	background-color: lightgray;
+	background-size: 400px 400px;
+	background-position: center center;
+	position: relative;
+	width: 400px;
+	height: 400px;
+}
+
+.soundcloud-bar{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 2px;
+	background: orange;
+}
+
+.soundcloud-title{
+	background: rgba(0, 0, 0, 0.4);
+	padding: 5px;
+	color: white;
+	font-size: 12pt;
+	border-bottom: 1px solid black;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.soundcloud-button{
+	height: 400px;
+	width: 100px;
+	background: black;
+	display: inline-block;
+	background-size: 50px 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: hand;
+	transition: .2s box-shadow;
+	-webkit-transition: .2s box-shadow;
+	-moz-transition: .2s box-shadow;
+	z-index: 4;
+}
+
+.soundcloud-button:active{
+	box-shadow: inset 0px 0px 10px white;
+}
+
+.soundcloud-button.forward{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-image: url(img/fwd.png);
+}
+
+.soundcloud-button.back{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-image: url(img/back.png);
+}
+
+#soundcloud-widget{
+	display: none;
+}
